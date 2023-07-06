@@ -3,7 +3,7 @@ const desktopMenu = document.querySelector('.desktop-menu');
 const burguerMenu = document.querySelector('.menu');
 const mobileMenu = document.querySelector('.mobile-menu');
 const menuKart = document.querySelector('.navbar-shopping-kart');
-const aside = document.querySelector('.product-detail')
+const aside = document.querySelector('.product-kart-detail')
 const cardsContainer = document.querySelector('.cards-container')
 
 menuEmail.addEventListener('click', toogleDesktopMenu);
