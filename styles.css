@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
@@ -18,6 +19,7 @@ body {
   display: none;
 }
 
+/* Navbar general */
 nav {
   display: flex;
   justify-content: space-between;
@@ -91,7 +93,12 @@ nav {
   justify-content: center;
   align-items: center;
 }
+.menu:hover {
+  background-color: var(--hospital-green);
+  cursor: pointer;
+}
 
+/* Menú en desktop */
 .desktop-menu {
   position: absolute;
   top: 50px;
@@ -133,6 +140,40 @@ nav {
   display: inline-block;
 }
 
+/* Menú en mobile */
+.mobile-menu {
+  position: absolute;
+  top: 50px;
+  padding: 0px;
+}
+.mobile-menu a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+}
+.mobile-menu ul {
+  padding: 0;
+  margin: 24px 0 0;
+  list-style: none;
+}
+.mobile-menu ul:nth-child(1) {
+  border-bottom: 1px solid var(--very-light-pink);
+}
+.mobile-menu ul li {
+  margin-bottom: 24px;
+}
+.email {
+  font-size: var(--sm);
+  font-weight: 300 !important;
+}
+.sign-out {
+  color: var(--hospital-green) !important;
+  font-size: var(--sm);
+}
+
+.info-dispatch {
+  bottom: 10px;
+}
 
 @media (max-width: 640px) {
   .menu {
@@ -142,6 +183,15 @@ nav {
     display: none;
   }
   .navbar-email {
+    display: none;
+  }
+  .desktop-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 641px) {
+  .mobile-menu {
     display: none;
   }
 }
